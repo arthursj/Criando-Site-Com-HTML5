@@ -1,0 +1,144 @@
+@import url(https://fonts.googleapis.com/css?family=Oswald:300,400,700);
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900,200italic,300italic,400italic,600italic,700italic,900italic);
+
+.menu ul {
+    list-style-type: none;
+}
+
+.menu ul li a {
+    color: #000;
+    text-decoration: none;
+    font-family: 'Oswald', sans-serif;
+}
+
+.menu ul li:hover {
+    list-style-type: circle;
+}
+
+.menu ul li a:hover {
+    transition: 0.5s;
+    color: white;
+}
+
+.menu ul li a::selection {
+    background-color: rgb(43, 179, 179);
+    color: white;
+}
+
+html,
+body {
+    margin: 0;
+}
+
+body {
+    background-color: #f1f1f1;
+    display: flex;
+    justify-content: center;
+}
+
+.wrapper {
+    width: 1200px;
+    display: flex;
+    margin: 0 auto;
+    -webkit-box-shadow: 10px 10px 10px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0, 75);
+}
+
+.menu {
+    width: 15%;
+    background-color: rgb(31, 138, 138);
+    padding: 10px 20px 0px;
+}
+
+.main {
+    display: flex;
+    flex-flow: column;
+    width: 85%;
+}
+
+.header {
+    min-height: 150px;
+    background-image: url('../img/clinica-medica.jpg');
+    background-position: 50px;
+    background-size: cover;
+}
+
+.content {
+    min-height: 300px;
+    padding: 20px;
+}
+
+.content h1 {
+    margin-left: 100px;
+    color: rgb(6, 90, 90);
+}
+@media (min-width: 768px) {
+    .content h1 {
+        margin-left: 300px;
+    }
+}
+.content .first-character {
+    color: rgb(6, 90, 90);
+    font-weight: 400;
+    float: left;
+    font-size: 84px;
+    line-height: 64px;
+    padding-top: 4px;
+    padding-right: 8px;
+    padding-left: 3px;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.content::selection,
+.content h1::selection,
+.content .first-character::selection,
+.content p::selection {
+    background-color: rgb(43, 179, 179);
+    color: white;
+}
+
+.footer {
+    background-color: rgb(6, 90, 90);
+    min-height: 100px;
+    padding: 10px;
+    font-family: 'Oswald', sans-serif;
+    color: white;
+}
+
+.footer p::selection {
+    background-color: rgb(43, 179, 179);
+    color: white;
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgb(43, 179, 179);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: rgb(31, 138, 138);
+}
+
+::-webkit-scrollbar-track {
+    background-color: #111;
+}
+
+/* Para navegadores Gecko (Firefox) */
+::-moz-scrollbar {
+    width: 12px;
+}
+
+::-moz-scrollbar-thumb {
+    background-color: rgb(43, 179, 179);
+}
+
+::-moz-scrollbar-thumb:hover {
+    background-color: rgb(31, 138, 138);
+}
+
+::-moz-scrollbar-track {
+    background-color: #222;
+}
